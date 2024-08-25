@@ -1,9 +1,10 @@
 import random
+import hangstages
 print("\n" "-----Welcome to Hangman Game-----")
 name=input("\n" "Enter your name:")
 print("Hello " + name +" Best of Luck")
 print("\n" "------You have only 6 lives* so guess the word within 6 attempts -----")
-words_list=["Apple","Butterfly","Cherry","Delicious","Earth"]
+words_list=["Apple","Butterfly","Cherry","Delicious","Earth","Computer","Tamil Nadu","Chennai"]
 lives=6
 chosen_word=random.choice(words_list)
 print(chosen_word)
@@ -29,3 +30,4 @@ while not death:
     if '_' not in display:
         death =True
         print("You Win the game!!!")
+    print(hangstages.stages[lives])
