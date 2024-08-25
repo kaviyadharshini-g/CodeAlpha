@@ -15,7 +15,7 @@ print(display)
 death=False
 while not death:
     guessed_letter=input("Guess a letter: ")
-    
+
     for position in range(len(chosen_word)):
         letter = chosen_word[position]
         if letter == guessed_letter:
